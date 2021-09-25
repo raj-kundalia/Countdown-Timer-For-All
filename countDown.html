@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer - For all</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 80px;
+            text-align: center;
+            padding: 100px 60px;
+            background: linear-gradient(lightyellow, lightblue);
+            font-family: sans-serif;
+            font-weight: lighter;
+            height: 100vh;
+        }
+        #display {
+            font-size: 3em;
+            font-weight: 100;
+            color: white;
+            padding: 20px;
+            width: 700px;
+            color: white;
+            margin: auto;
+        }
+        #display div {
+            display: inline-block;
+            min-width: 90px;
+            padding: 15px;
+            background: #020b43;
+            border-radius: 10px;
+            border: 2px solid #030d52;
+            margin: 15px;
+        }
+        #display div span {
+            color: #ffffff;
+            display: block;
+            margin-top: 15px;
+            font-size: .35em;
+            font-weight: 400;
+        }
+        #input {
+            border: 3px solid rgb(24, 17, 129);
+            border-radius: 7px;
+            width: 250px;
+            height: 25px;
+            text-align: center;
+        }
+        #button {
+            text-align: center;
+            width: 90px;
+            height: 27px;
+            background: #16d2af;
+            color: darkblue;
+            font-size: 14px;
+            border: 2px solid #251042;
+            border-radius: 15px;
+            font-weight: bold;
+            color: darkblue;
+        }
+        #button:hover {
+            cursor: pointer;
+            background: darkblue;
+            color:#16d2af;
+            padding: 2px;
+            border: 2px solid rgb(11, 91, 102)
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Countdown Timer !!</h1> <br>
+    <input type="text" id="input" placeholder="Example : YYYY-MM-DD HH:MM:SS">
+    <button type="submit" id="button">Set Time!</button>
+    <div class="display" id="display"></div>
+</body>
+<script src="countDown.js"></script>
+
+</html>
